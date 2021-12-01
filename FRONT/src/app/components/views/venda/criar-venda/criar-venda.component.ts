@@ -43,7 +43,7 @@ export class CriarVendaComponent implements OnInit {
         carrinhoId: this.carrinhoId,
       }
   
-      this.vendaService.create(venda).subscribe((venda) => {
+      this.vendaService.create(venda).subscribe((venda) => { 
         console.log(venda);
         this.router.navigate([""]);
       })
