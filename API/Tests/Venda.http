@@ -1,0 +1,14 @@
+### Listar vendas
+POST https://localhost:5001/api/venda/create
+Content-Type: application/json
+
+{
+    "cliente": "RogercLIENTE",
+    "carrinhoId": "abc",
+    "pagamentoId": 1
+}
+
+### LISTA AS VENDAS
+GET https://localhost:5001/api/venda/list
+
+

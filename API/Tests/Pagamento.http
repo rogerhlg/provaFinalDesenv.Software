@@ -1,0 +1,20 @@
+### Criar pagamento
+POST https://localhost:5001/api/pagamento/create
+Content-Type: application/json
+
+{
+    "Nome": "PIX",
+    "Tipo": "A vista"
+}
+
+### Criar pagamento
+POST https://localhost:5001/api/pagamento/create
+Content-Type: application/json
+
+{
+    "Nome": "CREDITO",
+    "Tipo": "Parcelado"
+}
+
+### Listar pagamentos
+GET https://localhost:5001/api/pagamento/list

@@ -1,0 +1,21 @@
+<div class="dGrid">
+    <mat-form-field class="input" id="nome">
+        <mat-label for="nome">Nome:</mat-label>
+        <input matInput type="text" name="nome" [(ngModel)]="nome" />
+    </mat-form-field>
+
+    <mat-form-field class="input" id="pagamento">
+        <mat-label for="pagamento">Pagamento:</mat-label>
+        <mat-select name="pagamento" [(ngModel)]="pagamentoId">
+            <mat-option
+                *ngFor="let pagamento of pagamentos"
+                value="{{ pagamento.pagamentoId }}"
+            >
+                {{ pagamento.nome }}
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <button mat-raised-button color="warn" (click)="comprar()">
+        Cadastrar
+    </button>
+</div>
